@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "aabe3ebe-76b5-43bc-b915-ab907c732ffa",
+		"name": "SAPIENS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SapiensCustomer",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"doori@mailinator.com\",\r\n\r\n    \"applicationIdentifer\": \"NEW_SALES_FUNNEL\",\r\n\r\n    \"type\": \"INDIVIDUAL\",\r\n\r\n    \"walletId\": 98765432198765,\r\n\r\n    \"country\": \"US\",\r\n    \"zipcode\": \"60090\",\r\n    \r\n    \"profiles\": [\r\n        {\r\n            \"type\": \"PRIMARY\",\r\n            \"name\": \"BH, BB\",\r\n            \"firstName\": \"BH\",\r\n            \"middleName\": \"\",\r\n            \"lastName\": \"BB\",\r\n            \"emails\": [\r\n                {\r\n                    \"type\": \"PRIMARY\",\r\n                    \"value\": \"doori@mailinator.com\",\r\n                    \"isPreferred \": true\r\n                }\r\n            ],\r\n            \"contactDetails\": [\r\n                {\r\n                    \"type\": \"HOME\",\r\n                    \"value\": \"(998) 998-9898\",\r\n                    \"preferenceType\": \"PRIMARY\",\r\n                    \"isPreferred \": true\r\n                }\r\n            ],\r\n            \"addresses\": [\r\n                {\r\n                    \"type\": \"MAILING\",\r\n                    \"apartmentUnit\": \"G-304\",\r\n                    \"line1\": \"21130 Hacienda Blvd\",\r\n                    \"line2\": \"string\",\r\n                    \"city\": \"California City\",\r\n                    \"state\": \"CA\",\r\n                    \"county\": \"Kern\",\r\n                    \"country\": \"US\",\r\n                    \"zipcode\": \"93505-2206\"\r\n                },\r\n                {\r\n                    \"type\": \"LOOKUP_ADDRESS\",\r\n                    \"apartmentUnit\": \"G-304\",\r\n                    \"line1\": \"21130 Hacienda Blvd\",\r\n                    \"line2\": \"string\",\r\n                    \"city\": \"California City\",\r\n                    \"state\": \"CA\",\r\n                    \"county\": \"Kern\",\r\n                    \"country\": \"US\",\r\n                    \"zipcode\": \"93505-2206\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{CustomerQA}}/v3/customers",
+							"host": [
+								"{{CustomerQA}}"
+							],
+							"path": [
+								"v3",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"doori@mailinator.com\",\r\n\r\n    \"applicationIdentifer\": \"NEW_SALES_FUNNEL\",\r\n\r\n    \"type\": \"INDIVIDUAL\",\r\n\r\n    \"walletId\": 98765432198765,\r\n\r\n    \"country\": \"US\",\r\n    \"zipcode\": \"60090\",\r\n    \r\n    \"profiles\": [\r\n        {\r\n            \"type\": \"PRIMARY\",\r\n            \"name\": \"BH, BB\",\r\n            \"firstName\": \"BH\",\r\n            \"middleName\": \"\",\r\n            \"lastName\": \"BB\",\r\n            \"emails\": [\r\n                {\r\n                    \"type\": \"PRIMARY\",\r\n                    \"value\": \"doori@mailinator.com\",\r\n                    \"isPreferred \": true\r\n                }\r\n            ],\r\n            \"contactDetails\": [\r\n                {\r\n                    \"type\": \"HOME\",\r\n                    \"value\": \"(998) 998-9898\",\r\n                    \"preferenceType\": \"PRIMARY\",\r\n                    \"isPreferred \": true\r\n                }\r\n            ],\r\n            \"addresses\": [\r\n                {\r\n                    \"type\": \"MAILING\",\r\n                    \"apartmentUnit\": \"G-304\",\r\n                    \"line1\": \"21130 Hacienda Blvd\",\r\n                    \"line2\": \"string\",\r\n                    \"city\": \"California City\",\r\n                    \"state\": \"CA\",\r\n                    \"county\": \"Kern\",\r\n                    \"country\": \"US\",\r\n                    \"zipcode\": \"93505-2206\"\r\n                },\r\n                {\r\n                    \"type\": \"LOOKUP_ADDRESS\",\r\n                    \"apartmentUnit\": \"G-304\",\r\n                    \"line1\": \"21130 Hacienda Blvd\",\r\n                    \"line2\": \"string\",\r\n                    \"city\": \"California City\",\r\n                    \"state\": \"CA\",\r\n                    \"county\": \"Kern\",\r\n                    \"country\": \"US\",\r\n                    \"zipcode\": \"93505-2206\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{CustomerQA}}/v3/customers",
+							"host": [
+								"{{CustomerQA}}"
+							],
+							"path": [
+								"v3",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://csvqgm4rrl.execute-api.us-east-2.amazonaws.com/petplan-qa2-apigw/fdp-customer-service/v3/customers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"email\": \"test911222@gmail.com\",\n   \"applicationIdentifer\": \"NEW_SALES_FUNNEL\",\n   \"type\": \"INDIVIDUAL\",\n   \"walletId\": 10000000003153,\n   \"country\": \"US\",\n   \"zipcode\": \"98004\",\n   \"profiles\": [\n       {\n           \"type\": \"PRIMARY\",\n           \"name\": \"BH, BB\",\n           \"firstName\": \"BH\",\n           \"middleName\": \"\",\n           \"lastName\": \"BB\",\n           \"emails\": [\n               {\n                   \"type\": \"PRIMARY\",\n                   \"value\": \"ygandoori@mailinator.com\",\n                   \"isPreferred \": true\n               }\n           ],\n           \"contactDetails\": [\n               {\n                   \"type\": \"HOME\",\n                   \"value\": \"(998) 998-9898\",\n                   \"preferenceType\": \"PRIMARY\",\n                   \"isPreferred \": true\n               }\n           ],\n           \"addresses\": [\n               {\n                   \"type\": \"MAILING\",\n                   \"apartmentUnit\": \"G-304\",\n                   \"line1\": \"21130 Hacienda Blvd\",\n                   \"line2\": \"string\",\n                   \"city\": \"California City\",\n                   \"state\": \"WA\",\n                   \"county\": \"Kern\",\n                   \"country\": \"US\",\n                   \"zipcode\": \"98004\"\n               },\n               {\n                   \"type\": \"LOOKUP_ADDRESS\",\n                   \"apartmentUnit\": \"G-304\",\n                   \"line1\": \"21130 Hacienda Blvd\",\n                   \"line2\": \"string\",\n                   \"city\": \"California City\",\n                   \"state\": \"WA\",\n                   \"county\": \"Kern\",\n                   \"country\": \"US\",\n                   \"zipcode\": \"98004\"\n               }\n           ]\n       }\n   ]\n}"
+						},
+						"url": {
+							"raw": "https://csvqgm4rrl.execute-api.us-east-2.amazonaws.com/petplan-qa2-apigw/fdp-customer-service/v3/customers",
+							"protocol": "https",
+							"host": [
+								"csvqgm4rrl",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"petplan-qa2-apigw",
+								"fdp-customer-service",
+								"v3",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCustomerDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SapiensPolicyService",
+			"item": [
+				{
+					"name": "SapiensCreatePolicy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJraWQiOiJWOFZwRkpDVHBYbXp4SzdlTXZmMVZXcVwvczVOWkpLMUVpMkt5OWMydUdNUT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4NTg2MDQ3Ni1mMDI4LTQ5YmYtYjQwNy02ZmQ4YjMyYWEyMDQiLCJjb2duaXRvOmdyb3VwcyI6WyJDVVNUT01FUiJdLCJldmVudF9pZCI6IjNhNzc4YjIxLTkxMjAtNGNjMS04MzM5LWYzZDU2YmNlZGNkYyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MDIwNzIxNzcsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTIuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0yX242V0k2OHd4ciIsImV4cCI6MTYwMjA3NTc3NywiaWF0IjoxNjAyMDcyMTc3LCJqdGkiOiI0NGM1NzgyNy0zOGFmLTRmY2EtYmVlMi03ZDBhODlmYzZjMmUiLCJjbGllbnRfaWQiOiI2YWZucTlpMzRmZmJuYWZxZTRqaDV1cTU4ZiIsInVzZXJuYW1lIjoiMWI2MzY3NDQtOTI1Mi00Y2QzLTkwMjEtZjNlMzM5N2MwYjc4In0.diZE0RJdgEwK8WPaduBvDfT08TqsXtWxpQKs-JaZcK-KBoiI6UKok4_3_7bZ-TdIOo4yfPkz23Vzihhmnady-BuPFpfqbo0UqXV-TAgVDXeSQd96Ffg6vOJ8RVXrH1yRpC0Li89YlvQIwP39upuxatcBnecrhMlKSoZwCGFCF3JNnylytjFPE0uKJdkkkftXtO-iCU11g8WENST806RsCnpIRvJKIo1DfLIivbM9qZQhO0V5dsRgQU7XGs51KwZCGS3wenjnae0JSEEyqy8_WtxQaBuWQXMIi6SGXh-3Z3FdKnLd5YkeYBnHBF6U5oFH04n_hSc2cGYXPyk3yXxtGQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactionIdUserInterface\": \"c51c5e55-c591-44be-b80a-d9943bc7152a\",\n    \"branding\": \"petplan\",\n    \"orderTotalAmount\": 100.34,\n    \"orderCount\": 1,\n    \"requestIdentifier\": \"05559911-e492-4f26-aa5c-72dd308edb50\",\n    \"serviceCode\": \"US\",\n    \"agencyCode\": \"merkel\",\n    \"agentCode\": \"merkel\",\n    \"productCategory\": \"INSURANCE\",\n    \"productType\": \"COMPREHENSIVE_PET_INSURANCE\",\n    \"paymentDetails\": {\n        \"walletId\": 98765432198765,\n        \"payInMethodId\": 987654321987654,\n        \"transactionId\": 9876543219876543,\n        \"gatewayTransactionId\": \"pi_ 1EXUPv2eZvKYlo2CStIqOmb\",\n        \"paymentType\": \"CARD\",\n        \"instrumentDetails\": {\n            \"type\": \"CREDIT\",\n            \"brand\": \"VISA\",\n            \"last4Digit\": \"1234\",\n            \"expMonth\": \"10\",\n            \"expYear\": \"2030\"\n        },\n        \"billingAddresses\": {\n            \"zipcode\": \"98004\"\n        }\n    },\n    \"billing\": {\n        \"type\": \"SINGLE_POLICY\",\n        \"dueDate\": 12\n    },\n    \"customer\": {\n        \"type\": \"INDIVIDUAL\",\n        \"policyHolders\": [\n            {\n                \"type\": \"PRIMARY\",\n                \"externalCustomerReference\": 90000001,\n                \"platformCustomerUserId\": null,\n               \"addresses\": [\n                {\n                    \"type\": \"MAILING\",\n                    \"addressUnitId\": \"60\"\n                },\n                {\n                    \"type\": \"LOOKUP_ADDRESS\",\n                    \"addressUnitId\": \"60\"\n                }\n            ]\n            }\n        ]\n    },\n    \"discountApplied\": {\n        \"code\": \"AARP\",\n        \"partner\": {\n            \"code\": \"AARP\",\n            \"membershipNumber\": \"AARF1111111\",\n            \"isDiscountAnimalShelter\": true,\n            \"isdiscountGroupBenefit\": true,\n            \"isdiscountStrategicPartner\": true,\n            \"isdiscountMilitary\": true,\n            \"isdiscountVetStaff\": true,\n            \"isdiscountInternetPart\": true\n        }\n    },\n    \"pet\": {\n        \"policyTransactionId\": \"991837af-7e46-4c06-9915-29acf107e38f\",\n        \"externalCustomerReference\": 190000001,\n        \"partyNumber\": 1270,\n        \"fName\": \"Oscar\",\n        \"mName\": \"\",\n        \"lName\": \"Oscar\",\n        \"type\": \"DOG\",\n        \"gender\": \"MALE\",\n        \"breedType\": \"MIXED\",\n        \"breedId\": \"3JQT5U05\",\n        \"age\": 6,\n        \"isActual\": true,\n        \"dob\": \"2020-04-01\",\n        \"state\": \"WA\",\n        \"zipcode\": \"98004\",\n        \"country\": \"US\",\n        \"workingDog\": false,\n        \"hasMicrochip\": true,\n        \"tagNumber\": \"34342423423432\",\n        \"deductibleType\": \"ANNUAL\",\n        \"deductible\": 600,\n        \"maxAnnualPayout\": \"15000\",\n        \"coinsurance\": 80,\n        \"finalPremium\": 233.12,\n        \"currency\": \"USD\",\n        \"effectiveDate\": \"2020-10-07\",\n        \"paymentPlanType\": \"ANNUAL\",\n        \"healthAccidentIllnessExaminationFees\": \"INC\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://pi10skj6al.execute-api.us-east-2.amazonaws.com/qa/fdp-policy-service/v3/policies",
+							"protocol": "https",
+							"host": [
+								"pi10skj6al",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"qa",
+								"fdp-policy-service",
+								"v3",
+								"policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rate Policy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"// tests[\"Status code is 201\"] = responseCode.code === 201;\r",
+									"// var parsedResponse = JSON.parse(responseBody);\r",
+									"\r",
+									"\r",
+									"// postman.setGlobalVariable(\"BAUCUSTOMER\", parsedResponse.payload.responses[0].customerNumber);\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"id": "69b95e7e-1a7a-4975-9c66-95b6147796a0"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CorrelationId",
+								"type": "text",
+								"value": "45677889",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestIdentifier\": \"05559911-e492-4f26-aa5c-72dd308edb50\",\r\n    \"policyVersion\": \"1\",\r\n    \"policyId\": \"1\",\r\n    \"policyCtInt\": \"1\",\r\n    \"policyCtId\": \"1\"\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{Policy}}/v3/policies/:{policy-mcid}/rate-forms-policy",
+							"host": [
+								"{{Policy}}"
+							],
+							"path": [
+								"v3",
+								"policies",
+								":{policy-mcid}",
+								"rate-forms-policy"
+							],
+							"variable": [
+								{
+									"key": "{policy-mcid}",
+									"value": "{{POLICYMCID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Issue Policy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"// tests[\"Status code is 201\"] = responseCode.code === 201;\r",
+									"// var parsedResponse = JSON.parse(responseBody);\r",
+									"\r",
+									"\r",
+									"// postman.setGlobalVariable(\"BAUCUSTOMER\", parsedResponse.payload.responses[0].customerNumber);\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"id": "4dd20c7b-7ed6-481a-97d2-df0961affacf"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CorrelationId",
+								"type": "text",
+								"value": "45677889",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestIdentifier\": \"05559911-e492-4f26-aa5c-72dd308edb50\",\r\n    \"policyVersion\": \"1\",\r\n    \"policyId\": \"1\",\r\n    \"policyCtInt\": \"1\",\r\n    \"policyCtId\": \"1\"\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{Policy}}/v3/policies/:{policy-mcid}/issue-policy",
+							"host": [
+								"{{Policy}}"
+							],
+							"path": [
+								"v3",
+								"policies",
+								":{policy-mcid}",
+								"issue-policy"
+							],
+							"variable": [
+								{
+									"key": "{policy-mcid}",
+									"value": "{{POLICYMCID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SapiensPetService",
+			"item": [
+				{
+					"name": "Add Pet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{      \r\n\r\n    \"name\" : \"Oscar\",\r\n    \"petType\": \"DOG\",\r\n    \r\n    \"breedId\": \"1\",\r\n    \"breedGroup\": \"1\",\r\n    \r\n    \"age\" : 6,\r\n    \"gender\": \"MALE\",\r\n\r\n    \"working\": false,       \r\n    \r\n    \"isCalculated\": false,\r\n    \"dateOfBirth\": \"2030-04-01\",        \r\n    \r\n    \r\n    \"state\": \"PH\",\r\n    \"zipcode\" : \"95005\",\r\n    \"country\" : \"US\",\r\n    \r\n    \r\n    \"ownerships\": [\r\n        {               \r\n            \"startDate\": \"2030-04-01\",\r\n            \"type\": \"J\",\r\n            \"platformCustomerUserId\": \"493dd321-36db-49c3-8108-a528a82daccd\",\r\n            \"externalCustomerReference\": \"2CVXR6XF7\"\r\n        }\r\n    ],\r\n\r\n    \"weights\": [\r\n        {\r\n            \"date\": \"2030-04-01\",\r\n            \"weight\": 12.4,\r\n            \"weightMeasurement\": \"KG\"\r\n        }\r\n    ],\r\n\r\n\r\n    \"hasMicorchip\" : true,\r\n    \"tags\": [\r\n        {\r\n            \"tag\": \"6XGXGX7UXUXUX87\",\r\n            \"startDate\": \"2030-04-01\"\r\n        }\r\n    ]      \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PetQA}}/v3/pets",
+							"host": [
+								"{{PetQA}}"
+							],
+							"path": [
+								"v3",
+								"pets"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
