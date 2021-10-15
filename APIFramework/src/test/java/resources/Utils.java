@@ -39,7 +39,7 @@ public class Utils {
 	public static String getGlobalValues(String key) throws IOException
 	{
 		Properties prop=new Properties();
-		FileInputStream fis=new FileInputStream("D:\\practice\\APIFramework\\src\\test\\java\\resources\\GlobalValues.properties");
+		FileInputStream fis=new FileInputStream("C:\\Users\\Shivam_Dixit\\Framework\\Practice\\APIFramework\\src\\test\\java\\resources\\GlobalValues.properties");
 		prop.load(fis);
 		return prop.getProperty(key);
 	}
@@ -47,7 +47,7 @@ public class Utils {
 	public static void setJsonValues(String key , String value) throws IOException
 	{
 		Properties proper=new Properties();
-		FileOutputStream fos=new FileOutputStream("D:\\practice\\APIFramework\\src\\test\\java\\resources\\JsonVals.properties",true);
+		FileOutputStream fos=new FileOutputStream("C:\\Users\\Shivam_Dixit\\Framework\\Practice\\APIFramework\\src\\test\\java\\resources\\JsonVals.properties",true);
 		
 	    proper.put(key, value);
 	  
@@ -58,7 +58,7 @@ public class Utils {
 	public static String getJsonValues(String key ) throws IOException
 	{
 		Properties prop=new Properties();
-		FileInputStream fis=new FileInputStream("D:\\practice\\APIFramework\\src\\test\\java\\resources\\JsonVals.properties");
+		FileInputStream fis=new FileInputStream("C:\\Users\\Shivam_Dixit\\Framework\\Practice\\APIFramework\\src\\test\\java\\resources\\JsonVals.properties");
 		prop.load(fis);
 		System.out.println(prop.getProperty(key)+"-----------");
 	   return prop.getProperty(key);
