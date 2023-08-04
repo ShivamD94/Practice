@@ -5,15 +5,15 @@ import java.util.*;
 	     public static void main(String []args)
 	     {
 	     int a[] = {1,1,0,1,1,0};
-	        int j=-1,temp;
+	        int j=0,temp;
 	        for (int i=0; i<a.length; i++)
 	        {
 	        if (a[i]%2==0)
 	            {
-	                j++;
-	                temp=a[i];
-	                a[i]=a[j];
-	                a[j]=temp;
+	               // j++;
+	                temp=a[i];  //0
+	                a[i]=a[j];  //1
+	                a[j++]=temp;  //0
 	            }
 	         }
 	  

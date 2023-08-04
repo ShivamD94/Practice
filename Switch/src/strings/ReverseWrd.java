@@ -11,7 +11,7 @@ public class ReverseWrd {
 		  newString=newString+words[i]+" ";
 		}
 		String reverseWords="";
-		for(int i=newString.length()-1;i>=0;i--)
+		for(int i=newString.length()-1;i>=0;i--) // temp is a string hence length() and charAt()
 		{
 			reverseWords=reverseWords+newString.charAt(i);
 		}

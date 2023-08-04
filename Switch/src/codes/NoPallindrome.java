@@ -5,7 +5,7 @@ public static void noPallindorme(int no)
 {
 	int rev=0;
 	int temp=no;
-	String c=Integer.toString(rev);
+	
 	while(no>0)
 	{
 		rev=(rev*10)+no%10;

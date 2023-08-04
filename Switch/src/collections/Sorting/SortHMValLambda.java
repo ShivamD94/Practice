@@ -1,10 +1,7 @@
-package collections;
+package collections.Sorting;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
+
 
 public class SortHMValLambda {
 
@@ -14,6 +11,7 @@ public class SortHMValLambda {
 
 		// Sort the list using lambda
 		Collections.sort(al, (i1, i2) -> i1.getValue().compareTo(i2.getValue()));
+		//Collections.sort(al,(i1,i2)->i1.getKey().compareTo(i2.getKey()));
 
 		// Put the sorted values in a *Linked* HashMAp
 		LinkedHashMap<String, Integer> hm1 = new LinkedHashMap<String, Integer>();

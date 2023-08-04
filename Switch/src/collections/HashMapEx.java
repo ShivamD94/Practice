@@ -1,5 +1,6 @@
 package collections;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -17,14 +18,21 @@ public class HashMapEx {
      hm.put('c', "soccer");
      hm.put('a', "gillidanda");
      hm.putIfAbsent('b', "Cricket");
+     hm.putIfAbsent('b', "soccer");
+     hm.putIfAbsent('b', "soccer");
+     hm.putIfAbsent('b', "soccer");
+     hm.putIfAbsent('b', "soccer");
      System.out.println(hm.keySet());
-    // Collections.sort((List<T>) hm);
      
-     for(Map.Entry m:hm.entrySet())
+     ArrayList<Map.Entry<Character, String>> li=new ArrayList<Map.Entry<Character,String>>(hm.entrySet());
+   // Collections.sort(li ,(i1,i2)->i1.getValue().compareTo(i2.getValue()));
+	
+    
+     for(Map.Entry m:li)
      {
-    	 System.out.println("Key:"+m.getKey()+" "+"Value:"+m.getValue());
+    	// System.out.println("Key:"+m.getKey()+" "+"Value:"+m.getValue());
      }
-     hm.remove(3);
+    hm.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(s->System.out.println("Key:"+s.getKey()+" "+"Value:"+s.getValue()));
 	}
 
 }

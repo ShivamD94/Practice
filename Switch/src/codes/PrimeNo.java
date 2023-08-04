@@ -3,7 +3,7 @@ package codes;
 public class PrimeNo {
 	public static void primeNo(int n)
 	{
-	for(int i=2;i<n;i++) {   
+	for(int i=2;i<=n;i++) {   
 		 boolean isPrime = true;
 		for(int j=2;j<i;j++)
 		{
@@ -18,7 +18,7 @@ public class PrimeNo {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-      PrimeNo.primeNo(20);
+      PrimeNo.primeNo(19);
 	}
 
 }

@@ -17,8 +17,9 @@ public class LinkedHashSet1 {
 		s1.add("often");
 		s1.add("work");
 		s1.add("better");
-		s1.add("");
-		s1.add("");
+		s1.add(" ");
+		s1.add(" ");
+		s1.add(" lop");
 		//s1.removeIf(Str->Str.contains("lame"));
 		System.out.println(s1.size());
 	

@@ -6,6 +6,7 @@ public class Pair {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//doesnt work
 
 		int a[]={1,3,6,2,1,9,10,0,7,4,10,-1,11};
 		int temp , j ,i;

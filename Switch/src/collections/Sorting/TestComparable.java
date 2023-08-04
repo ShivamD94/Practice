@@ -1,7 +1,9 @@
-package collections;
+package collections.Sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
+
+import collections.Stud;
 
 public class TestComparable {
 
@@ -19,9 +21,12 @@ public class TestComparable {
 		al.add(s1);
 		al.add(s3);
 		Collections.sort(al);
+		
+		//al.sort((p1,p2)->p1.getName().compareTo(p2.getName()));
+		System.out.println(al);
 		for(Stud s:al)
 		{
-			System.out.println(s.rollno+"::"+s.name+"::"+s.school);
+			System.out.println(s.getRollno()+"::"+s.getName()+"::"+s.getSchool());
 		}
 		}
 

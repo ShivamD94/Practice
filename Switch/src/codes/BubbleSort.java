@@ -11,11 +11,11 @@ public class BubbleSort {
          int n=a.length;
          for(int i=0;i<n;i++)
          {
-        	 for(int j=1;j<n;j++)
+        	 for(int j=i+1;j<n;j++)
         	 {
-        		 if(a[j-1]>a[j])
-        		 {  temp=a[j-1];
-        		    a[j-1]=a[j];
+        		 if(a[i]>a[j])
+        		 {  temp=a[i];
+        		    a[i]=a[j];
         		    a[j]=temp;
         		 }
         	 }

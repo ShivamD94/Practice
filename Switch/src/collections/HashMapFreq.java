@@ -25,10 +25,9 @@ public class HashMapFreq {
 		List<Map.Entry<Character , Integer>> list= new LinkedList<Map.Entry<Character , Integer>>(mp.entrySet());
 		Collections.sort(list, (i1,i2)->i1.getValue().compareTo(i2.getValue()));
 		
-		HashMap<Character,Integer>m=new HashMap<Character, Integer>();
 		for(Map.Entry<Character, Integer>map:list)
 		{
-			System.out.println(map.getKey()+"::"+map.getValue());
+			
 		}
 	}
 

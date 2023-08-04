@@ -19,6 +19,13 @@ public class LinkedList1 {
 		al2.add("Ram");
 		al2.add("Ghanshaym");
 		al2.add("Pinto");
+		
+		List<String> list= new ArrayList<String>();
+		list.add("John");
+		list.add("Boorish");
+		list.add("Pinto");
+		al2.addAll(list);
+		System.out.println(al2);
 		//Collections.sort(list);
 		HashSet<String> s = new HashSet<String>();
 		s.add("nathan");
@@ -26,12 +33,12 @@ public class LinkedList1 {
 		s.add("Olo");
 		s.addAll(al2);
 		char mychr="piper".charAt(3);
-		System.out.println(mychr);
+		System.out.println(s);
 		// Collections.sort(al2);
 		
 		
 	
-		  
+		  //  String arr[]= List.toArray(new String[list.Size()]);
 					
 		
 			 

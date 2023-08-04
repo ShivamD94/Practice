@@ -15,6 +15,10 @@ public class CountCharInStrings {
 		}System.out.println("the no characters are::"+count);
 		
 		
+		// Count words in string
+		String arr[]=str.split(" ");
+		int j=arr.length;
+		System.out.println("The no of words are "+ j);
 	}
 
 }

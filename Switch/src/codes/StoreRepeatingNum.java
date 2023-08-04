@@ -12,7 +12,7 @@ public class StoreRepeatingNum {
 		int index=0;
 		for(int i=1;i<a.length;i++)
 		{
-			for(int j=i-1;j<a.length-1;j++)
+			for(int j=i-1;j<a.length-2;j++)
 			{
 				if(a[i]==a[j]||i!=j)
 					b[index++]=a[j];
